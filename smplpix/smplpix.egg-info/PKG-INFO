@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: smplpix
+Version: 1.0
+Summary: SMPLpix: Neural Avatars from Deformable 3D models
+Author: Sergey Prokudin
+Author-email: sergey.prokudin@gmail.com
+License: MIT
+License-File: LICENSE
