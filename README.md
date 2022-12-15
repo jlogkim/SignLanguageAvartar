@@ -25,3 +25,25 @@ Additionaly I recommend https://github.com/leeamy1203/dlf2020 page to other mode
 1. ``` python make_datafile.py ```
 2. ``` python train.py ```
 3. ``` python check_output.py ``` -> to make json file
+
+## For Pose to Avatar
+1. I used code and basic architecture from SMPLify, SMPLpix.
+  clone the github below
+  https://github.com/sergeyprokudin/smplpix
+  https://github.com/vchoutas/smplify-x
+
+2. Please follow the instructions for SMPLpix and SMPLify
+
+  for SMPLify, the command is as follows:
+
+  ``` python smplifyx/main.py --config cfg_files/fit_smplx.yaml \
+    --data_folder  ./data \
+    --output_folder ./data/smplifyx_results \
+    --visualize="True" \
+    --gender="male" \
+    --model_folder ./models \
+    --vposer_ckpt ./vposer_v1_0 \
+    --part_segm_fn ./smplx_parts_segm.pkl ```
+  
+  for SMPLpix, the command is as follows:
+    ```python smplpix/eval.py --workdir ./content/smplpix_logs/ --data_dir ./content/smplpix_logs/smplpix_data/test```
