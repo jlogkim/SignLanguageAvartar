@@ -45,5 +45,5 @@ Additionaly I recommend https://github.com/leeamy1203/dlf2020 page to other mode
     --vposer_ckpt ./vposer_v1_0 \
     --part_segm_fn ./smplx_parts_segm.pkl ```
   
-  for SMPLpix, the command is as follows:
+3. for SMPLpix, the command is as follows:
     ```python smplpix/eval.py --workdir ./content/smplpix_logs/ --data_dir ./content/smplpix_logs/smplpix_data/test```
